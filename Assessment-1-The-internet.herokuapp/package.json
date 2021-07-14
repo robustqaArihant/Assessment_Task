@@ -1,0 +1,30 @@
+{
+  "name": "webdriverio-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "all": "wdio wdio.conf.js --suite all",
+    "AddRemove": "wdio wdio.conf.js --spec ./test/AddRemove.test.js",
+    "FileUpload": "wdio wdio.conf.js --spec ./test/FileUpload.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/cli": "^6.7.4",
+    "@wdio/dot-reporter": "^7.7.5",
+    "@wdio/local-runner": "^6.7.3",
+    "@wdio/mocha-framework": "^6.7.3",
+    "@wdio/spec-reporter": "^6.7.0",
+    "@wdio/sync": "^6.7.3",
+    "chromedriver": "^86.0.0",
+    "wdio-chromedriver-service": "^6.0.4",
+    "wdio-intercept-service": "^4.1.2",
+    "wdio-mochawesome-reporter": "^4.0.0"
+  },
+  "dependencies": {
+    "@wdio/reporter": "^7.7.5",
+    "mochawesome-report-generator": "^5.2.0"
+  }
+}
